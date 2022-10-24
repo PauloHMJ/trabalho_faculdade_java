@@ -1,0 +1,278 @@
+/*ESTILOS GERAIS*/
+/*vamos fazer as medias query acima dos 450px de width e acima dos 915px de height*/
+*{
+    /*aqui definimos a cor das fontes*/
+    color: #25282e; 
+    margin:0px;
+    padding: 0px;
+    
+}
+a,i{
+ /*os links e o icones vão ter seus estilo aqui*/
+ transition: 0.5s; /*transição do hover quando passamos o mouse*/
+ text-decoration: none;
+}
+
+/*HEADER*/
+
+#header{
+    padding: 2%;/* espaçamento do header*/
+    border-bottom: 1px solid #ccc ;
+    text-align: center; /*alinhamento tanto de imagem quanto de texto*/
+    background-color: #f7a437;
+    color: #ffad15;
+}
+
+/*NAVBAR*/
+#navbar{
+    /*alinhando navbar*/
+    padding: 10px; /*para dar um espaçamento entre os links*/
+    margin: 10px auto; /*altura de 10px e automatico a distancia dos lados*/
+    text-align: center; /*alinhamento tanto de imagem quanto de texto*/
+    background-color: #d3d2d2;
+    
+}
+
+  /*----------NAVBAR--------2.0*/
+  
+  #navbar a:hover {
+    border-bottom: 5px solid rgb(240, 113, 166); /*Ação do traço (cor) */
+}
+  
+  #navbar a.active {
+    border-bottom: 5px solid red;/*Pagina selecionada (cor) */
+}
+
+
+#Tema{
+    color: rgb(39, 39, 39);
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+#p2{
+    border-top: 2px solid rgb(107, 107, 107);
+    height: 1px;
+    padding: 1px;
+
+
+}
+
+.assinatura{
+    font-size: 20px;
+    
+}
+
+/*CARROSSEL*/
+
+#slider{
+    overflow: hidden; 
+    border-top: #25282e;
+    
+}
+      
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 30s slider infinite;
+}
+#slider figure img {
+width: 20%;
+float: left;
+}
+      
+@keyframes slider {
+0% {left: 0%;}
+20% {left: 0%;}
+25% {left: -100%;}
+45% {left: -100%;}
+50% {left: -200%;}
+70% {left: -200%;}
+75% {left: -300%;}
+95% {left: -300%;}
+}
+
+
+.form-stilo{
+background-color: rgb(206, 205, 206);
+border-radius: 10%;
+margin-left: 2%;
+margin-right: 4%;
+
+
+}
+
+/*inputs*/
+#form{
+    color: rgb(250, 121, 1);
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+p{
+
+    font-size: 120%;
+    font-style: oblique;
+    color: #444;
+
+}
+.input{
+    margin-top: 14px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    outline: unset;
+    border: 3px solid #6d6a6c;
+    border-radius: 10px;
+    color: #9c9398;
+    
+}
+.input:focus{
+    background-color:rgb(252, 241, 224);
+    color: #1a1719;
+}
+
+#arch-form{
+    margin-left: 13cm;
+    width: max-content;
+
+}
+
+#Curriculo{
+  width: 900px;
+  font-style: italic;
+  
+
+}
+
+#bot-curri{
+   font-size: 24px;
+   width: 70%;
+   
+
+}
+
+
+#botao{
+    background-color: #198754;
+    color:white;
+    font-size: 1em;
+    border: 3px solid #198754;
+
+}
+
+
+/*footer*/
+.logo_facebook{
+    color:blue;
+    
+}
+.logo_instagram{
+    color:rgb(219, 0, 172)
+}
+.logo_twitter{
+    color:rgb(0, 255, 229)
+}
+.logo_whatsapp{
+    color: rgb(10, 184, 25);
+}
+
+
+footer{
+    
+    height: 250px;
+    padding:30px;
+    
+}
+#icones-redes-sociais div{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    
+}
+/*CELULAR*/
+@media(max-width:590px){
+    h1{
+        font-size: 1.5em;
+    }
+
+    label, #titulo-turno{
+        font-size: 1.3em;
+    }
+    .input{
+        font-size: 18px;
+        height: 30px;
+    }
+
+    .link-navbar{
+        font-size: 1.2em;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    
+
+
+}
+@media(max-width:330px){
+
+    h1{
+        font-size: 1.2em;
+    }
+    label, #titulo-turno{
+        font-size: 1em;
+    }
+    #navbar a{
+        color: #444;
+        font-size: 1em;
+        width: 65px;
+        
+    }
+    .link-navbar{
+        
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+}
+
+/*TABLETS*/
+@media(min-width:590px){
+    #navbar a{
+        
+        font-size: 2em;
+        width: 120px;
+        margin-left: 50px;
+       color: #2f0aff;
+       font-style: italic;
+  
+        
+    }
+    .link-navbar{
+        
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    label, #titulo-turno{
+        font-size: 2em;
+    }
+    .input{
+        font-size: 30px;
+        height: 50px;
+    }
+    #botao{
+        font-size: 2em;
+    }
+    footer{
+        font-size: 2em;
+    }
+    .botao-radio{
+        width: 25px;
+        height: 25px;
+    }
+
+}

@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro Universitário Unimetrocamp Wyden</title>
+    <title>HomeOffice Moveis</title>
     
-<!--icone do titulo-->
-<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/530/530047.png" type="image/x-icon">
-<!-- CSS do bootstrap -->
+  <!--icone do titulo-->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/530/530047.png" type="image/x-icon">
+  <!-- CSS do bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<!--icones do bootstrap-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-<!--Meu CSS-->
- <link rel="stylesheet" href="estilo_formulario.css">
+  <!--icones do bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!--Meu CSS-->
+    <link rel="stylesheet" href="estilo_index.css">
 </head>
 <body>
 
     <!--HEADER-->
     <div class="container-fluid"><!--Corpo do Site-->
      <header class="row" id="header"><!--utilizamos o header porque ele é semantico indicando o cabeçalho da página--> 
-      <img src="Unimetrocamp.png" alt="Faculdade">
-      <h1>Centro Universitário Unimetrocamp Wyden</h1>
+      <img src="Unimetrocamp.png" alt="">
+      <h1 id="Tema">HomeOffice Móveis</h1>
      </header>
 
      <!--NAVBAR-->
      <nav class="container" id="navbar">
-        <div class="row justify-content-center link-navbar">
-          <a  href="#">Home</a>
-          <a  href="#">Cursos</a>
-          <a  href="#">Contato</a>
+          <a  href="index.html">Home</a>
+          <a  href="form.html" class="active">Trabalhe Conosco</a>
+          <a  href="index.html">Sobre</a>
+          
         </div>
      </nav>
      <!--CARROSSEL-->
@@ -37,89 +37,118 @@
       <div id="slider">
       
         <figure>
-          <img src="carrossel_01.jpg" alt="Imagem_01">
-          <img src="carrossel_02.jpg" alt="Imagem_02">
-          <img src="carrossel_03.jpg" alt="Imagem_03">
-          <img src="carrossel_04.jpg" alt="Imagem_04">
-          <img src="carrossel_01.jpg" alt="Imagem_05">
+          <img src="carrossel_01.jpg" alt="Imagem_01" height="429">
+          <img src="carrossel_02.jpg" alt="Imagem_02" height="429">
+          <img src="carrossel_03.jpg" alt="Imagem_03" height="429">
+          <img src="carrossel_02.jpg" alt="Imagem_04" height="429">
+         
         </figure>
       
       </div>
 
+
+      
+      <br><br>
+
+      <div class="form-stilo" id="form-stilo">
+
+      <div id="traco-form">
+
+
      <!--FORMULARIO, colocar o nome da outra pagina na parte de action Exemplo:
       action="Banco.html"-->
       
-     <div>
+     <div id="form_estilo">
         <form class="container" action="https://api.sheetmonkey.io/form/gY9pqAXdFdjuwC7ShhtfhV" method="post">
+        <br>
+        <h1 id="form">Trabalhe Conosco</h1>
         
+        <div class="p2" id="p2"></div>
+        <p>Envie seu formulario para nós avaliarmos</p>
+
+          <br>
+          <div class="name" id="name">
+
          <label for="name">Nome</label>
+         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" id="icon">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" id="icon"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" id="icon"/>
+            </svg>
          <input type="text" name="Nome" id="name" placeholder="Nome Completo"  class="input" required>
         
-         <label for="email">Email</label>
-         <input type="email" name="E-mail" id="email" placeholder="E-mail"  class="input" required>
-            
-        
-         <label for="cpf">CPF</label>
-         <input type="number" name="CPF" id="cpf" placeholder="CPF"  class="input" required>
-        
-         <label for="idade">Idade</label>
-         <input type="number" name="Idade" id="idade" placeholder="Idade" min="18" class="input" required>
-      
-         <label for="genero">Gênero</label>
-         <select name="Genero" id="genero" class="input" required>
-          <option value="">Seu Gênero</option>
-          <option value="Masculino">Masculino</option>
-          <option value="Feminino">Feminino</option>
-         </select>
-    
-         <label for="naturalidade">Naturalidade</label>
-         <select name="Naturalidade" id="naturalidade" class="input" required>
-          <option value="">Seu Estado</option>
-          <option value="SP">São Paulo</option>
-          <option value="BH">Bahia</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="TO">Tocantins</option>
-         </select>
-    
-        
-        
-         <label for="curso">Cursos</label>
-         <select name="Curso" id="curso" class="input" required>
-          <option value="">Selecione seu Curso</option>
-          <option value="Informatica">Informatica</option>
-          <option value="Psicologia">Psicologia</option>
-          <option value="Direito">Direito</option>
-          <option value="Gastronomia">Gastronomia</option>
-         </select>
-    
-        
-           <!--Alteração aqui!-->
-        
-         <div  class="selecionaveis">
-          <p id="titulo-turno">Turno</p>
-    
-          <label for="manha">Manhã</label>
-          <input type="radio" id="manha" name="Turno" class="botao-radio" value="MANHA"   required>
-          <label for="tarde">Tarde</label>
-          <input type="radio" id="tarde"  name="Turno" class="botao-radio" value="TARDE"  required>
-          <label for="noite">Noite</label>
-          <input type="radio" id="noite" name="Turno" class="botao-radio" value="NOITE" required>
-  
          </div>
-        
-         <label for="Data">Data de Nascimento </label>
-         <input type="date" name="Data" id="Data" class="input" value="" required>
-    
+
+         <div>
+
+          <label for="email">E-mail</label>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18" fill="currentColor" class="bi bi-envelope" viewBox="0 0 14 14">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
+          </svg>
+          
+         <input type="email" name="E-mail" id="email" placeholder="E-mail"  class="input" required>
+         
+         </div>
+
+         <div>
+
+
+         <label for="tel">Telefone</label>
+
+         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+          <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"></path>
+          <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+        </svg>
+         <input type="tel" name="Telefone" id="tel" placeholder="Telefone" class="input" required>
+
+         </div>
+
+         <div>
+
+         <label for="cidade">Cidade</label>
+         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+          <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"></path>
+        </svg>
+         <input type="text" name="cidade" id="cidade" placeholder="Coloque Sua Cidade" class="input" required>
+
+
+         </div>
+
+         <div>
+
+         <label for="estado">Estado</label>
+         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+          <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"></path>
+        </svg>
+         <input type="text" name="estado" id="cidade" placeholder="Coloque Seu Estado" class="input" required>
+         
+         </div>
+         <br><br>
+
+         <div  calss="arch-form" id="arch-form">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"></path>
+          </svg>
+
+         <input type="file" name="Curriculo" id="Curriculo" value="Escolha SeuCurriculo" accept="image/png, image/jpg, image/jpeg, image/pdf" required>
+        </div>
+        <br><br><br>
+
         <input type="submit"  value="Enviar" class="input" id="botao">
       
         </form>
+        <br><br>
      </div>
 
-      <footer class="container">
+  </div>
+
+</div>
+
+      <footer class="container" id="final">
         <p>Nos encontre nas redes sociais:</p>
         <div class="row justify-content-center" id="icones-redes-sociais">
           <div class="col-1">
-            <a href="https://www.facebook.com/unimetrocampowyden/"><i class="bi bi-facebook logo_facebook"></i></a>
+            <a href="https://www.facebook.com/homeofficepalmares/photos/?ref=page_internal"><i class="bi bi-facebook logo_facebook"></i></a>
           </div>
   
           <div class="col-1">
@@ -127,7 +156,7 @@
           </div>
   
           <div class="col-1">
-            <a href="https://www.youtube.com/c/CentroUniversit%C3%A1rioUniMetrocamp"><i class="bi bi-youtube logo_youtube"></i></a>
+            <a href="https://www.youtube.com/c/CentroUniversit%C3%A1rioUniMetrocamp"><i class="bi bi-whatsapp logo_whatsapp"></i></a>
           </div>
         </div>
   
